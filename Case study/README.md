@@ -27,3 +27,5 @@ Bioimpedance measures how well the body resists the flow of electric current. In
 Measuring your core body temperature while engaging in some physical activity is a feature most fitness trackers provide.
 
 ![WhatsApp Image 2022-02-21 at 8 50 56 AM](https://user-images.githubusercontent.com/98872154/154883962-38cece95-16f8-4427-8b0e-c130f9863a84.jpeg)
+
+###### reference:https://www.hackerearth.com/blog/developers/fitness-tracker-work/
