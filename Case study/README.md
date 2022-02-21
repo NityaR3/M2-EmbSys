@@ -1,21 +1,29 @@
-# Washing Machine #
-The system should provide fully automatic mode, semi-automatic mode and manual mode. Modes should be selectable by a keypad.
+# fitness tracker 
+This wearable is a wrist-based monitor with sensors that tell you if you’ve been walking enough, sleeping and eating enough, jogging or sprinting, staying out too long in the sun, and it tracks a whole lot of other stuff to keep you as healthy as you can be.
+### Sensing layer: 
+This layer has sensors embedded in the device; these sensors collect data like number of footsteps, heart rate, body temperature, etc. The data collected by sensors are sent to servers using Wide Area Network such as GSM, GPRS, and LTE.
+### MAC Layer: 
+This layer is responsible for device monitoring and control, quality-of-service management, and power management.
+### Network layer: 
+This layer takes care of transmission, routing, and addressing using IPV6. With IPV6, address allocation and management can be done more efficiently, hence it is chosen over other Internet protocols.
+### Processing and storage layer: 
+In this layer, the data received from the sensing layer is analyzed and stored in databases. This layer is also responsible for security control.
+### Service layer: 
+This layer provides the analyzed and processed data to other services like mobile application on Android or iOS.
+![WhatsApp Image 2022-02-21 at 8 29 23 AM](https://user-images.githubusercontent.com/98872154/154883986-2f3431a2-12da-4916-9f18-ac8b7efc17ad.jpeg)
 
-Under fully automatic mode user intervention requirement should be zero. Once the system is started in this mode it should perform its work independently and after the completion of work it should notify the user about the completion of work. This mode instantaneously should sense cloth quality and requirement of water, water temperature, detergent, load, wash cycle time and perform operation accordingly.
+## Sensors:
+#### Accelerometers:
+These are electro-mechanical devices capable of measuring acceleration forces, which are intensity and direction of motion. In put it in simpler terms, these devices monitor your movement
+#### GPS:
+Global positioning system (GPS) is so much a part of our everyday lives, I doubt it needs any sort of explanation. This technology tracks people, objects, and finds locations, directions.
+#### Galvanic Skin Response Sensor
+Galvanic Skin Response Sensor is another sensor that makes the activity tracker tick.
+#### Optical heart rate monitor (OHRM)
+Wearables that have the optical heart rate sensor use a method called photoplethysmography (PPG) to measure the heart rate.
+#### Bioimpedance sensors
+Bioimpedance measures how well the body resists the flow of electric current. In principle, impedance is measured by applying a small electric current via a pair of electrodes; the resulting voltage is picked up using another pair of electrodes.
+#### Temperature sensors
+Measuring your core body temperature while engaging in some physical activity is a feature most fitness trackers provide.
 
-In semi-automatic mode also user requirement should be nil. But user has to choose any one of the semi-automatic mode in which washing conditions are predefined. Once the predefined mode is started the system should perform its job and after completion it should inform the user.
-
-In manual mode continuous intervention of user is required. User has to specify which operation he wants to do and has to provide related information to the control system. For example, if user wants to wash only, he has to choose ‘wash’ option in manual mode. Then the system should ask the user to enter the wash time, amount of water and the load. After these data are entered, the user should start the machine. When the specified operation is completed system should inform the user.
-
-When the lid is open system should not work. If door is accidentally opened in between wash operation, then the system should stop working in minimum possible time (<10s)>
-
-The system should provide all basic features of a washing machine like washing, rinsing, spinning, drying, cold wash, hot wash etc.
-
-The system should provide easy options for upgradeability of new features. The hardware and the software should be compatible to both machines, which have fewer features, or more features. Removal of any feature should not affect the working of any other features or overall working of the system.
-
-The system should work on single phase AC from 190VAC to 250VAC. The system should protect itself from power supply voltage variations.
-
-In the event of power failure, the washing machine should automatically start its cycle from the point of interruption when power is resumed.
-
-![WhatsApp Image 2022-02-20 at 6 33 42 PM](https://user-images.githubusercontent.com/98872154/154844055-5f769e98-2800-4048-9887-b94066e85b69.jpeg)
-![WhatsApp Image 2022-02-20 at 6 33 17 PM](https://user-images.githubusercontent.com/98872154/154844058-b45225ed-34f6-466c-b741-fc1c25404bbc.jpeg)
+![WhatsApp Image 2022-02-21 at 8 50 56 AM](https://user-images.githubusercontent.com/98872154/154883962-38cece95-16f8-4427-8b0e-c130f9863a84.jpeg)
