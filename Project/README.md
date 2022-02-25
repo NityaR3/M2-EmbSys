@@ -54,6 +54,11 @@ There are many circuits available for 2 digit up/down counter but using a microc
 | LR02  | Reading the output word from right to left                 | Output is a binary value.                           |      
 | LR03  | Outputs represent a binary number                          | Equalling the number of input pulses received.      |
 
+#### 7. Block diagram:
+##### Circuit diagram:
+![WhatsApp Image 2022-02-25 at 11 30 17 PM](https://user-images.githubusercontent.com/98872154/155764656-1f4a7877-077d-4cfb-88cc-508fbcecabe6.jpeg)
+
+
 #### 10.Application:
 Alarm Clock, Set AC Timer, Set time in camera to take the picture, flashing light indicator in automobiles, car parking control etc.
 Counting the time allotted for special process or event by the scheduler.
