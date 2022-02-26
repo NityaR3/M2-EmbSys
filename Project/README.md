@@ -15,9 +15,11 @@ Counters are used in many different applications. Some count up from zero and pr
   ii)Low level requirements
 7. Block Diagram and Blocks explination
 i)Block Diagram
-8. Micro controller and memory
-9. Sub-system and others
-10. Application
+8. Sensors
+9. Actuators.
+10. Micro controller and memory
+11. Sub-system and others
+12. Application
 
 
 #### 1. About the Two Digit Up/Down Counter Circuit:
@@ -58,6 +60,16 @@ There are many circuits available for 2 digit up/down counter but using a microc
 ##### Circuit diagram:
 ![WhatsApp Image 2022-02-25 at 11 30 17 PM](https://user-images.githubusercontent.com/98872154/155764656-1f4a7877-077d-4cfb-88cc-508fbcecabe6.jpeg)
 
+#### 8. Sensors:
+##### Push Button: 
+A push-button is a simple switch mechanism to control some aspect of a machine or a process. Buttons are typically made out of hard material, usually plastic or metal.The surface is usually flat or shaped to accommodate the human finger or hand, so as to be easily depressed or pushed. Buttons are most often biased switches, although many un-biased buttons (due to their physical nature) still require a spring to return to their un-pushed state. 
+
+#### 9. Actuators:
+##### Seven segment Display:
+Seven segment displays are the output display device that provide a way to display information in the form of image or text or decimal numbers which is an alternative to the more complex dot matrix displays. It is widely used in digital clocks, basic calculators, electronic meters, and other electronic devices that display numerical information. It consists of seven segments of light emitting diodes (LEDs) which is assembled like numerical 8.
+
+#### 10. Micro controller:
+The ATmega8 is a low-power CMOS 8-bit microcontroller based on the AVR RISC architecture. By executing powerful instructions in a single clock cycle, the ATmega8 achieves throughputs approaching 1 MIPS per MHz, allowing the system designer to optimize power consumption ver- sus processing speed.
 
 #### 10.Application:
 Alarm Clock, Set AC Timer, Set time in camera to take the picture, flashing light indicator in automobiles, car parking control etc.
