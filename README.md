@@ -1,4 +1,7 @@
 # M2-EmbSys
+
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/da65ea396f3940a0b72cf92eead6109c)](https://app.codacy.com/gh/NityaR3/M2-EmbSys?utm_source=github.com&utm_medium=referral&utm_content=NityaR3/M2-EmbSys&utm_campaign=Badge_Grade_Settings)
+
 ## Ultrasonic Blind Walking Stick
 ### Table of Contents
 1. About
