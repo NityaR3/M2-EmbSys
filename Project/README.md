@@ -1,84 +1,46 @@
-# Two Digit Up/Down Counter Circuit
+# Ultrasonic Blind Walking Stick
 
-Counters are used in many different applications. Some count up from zero and provide a change in state of output upon reaching a predetermined value; others count down from a preset value to zero to provide an output state change.
+The main objective of this project is to help blind people to walk with ease and to be warned whenever their walking path is obstructed with other objects, people or other similar odds. As a warning signal, a buzzer is connected in the circuit, whose frequency of beep changes according to the distance of object. The closer the distance of obstruction, the more will be the buzzer beep frequency. We can say that the beep frequency is inversely proportional to the distance
 
+#### 1. About 
 
-
-## Table of Contents
-1. About the Two Digit Up/Down Counter Circuit:
-2. Description:
-3. Identifying features
-4. State of art
-5. 5W's & 1H and S.W.O.T analysis
-6. Requirements
-  i)High level requirements
-  ii)Low level requirements
-7. Block Diagram and Blocks explination
-i)Block Diagram
-8. Sensors
-9. Actuators.
-10. Micro controller and memory
-11. Sub-system and others
-12. Application
-
-
-#### 1. About the Two Digit Up/Down Counter Circuit:
-
-Generally, one can see the digital displays which display the score when buttons are pressed on score boards. The main heart of this score board is 2 digits up/down counter circuit. The 2 digits are displayed on two 7 segment displays. This article describes 2 digit up/down counter circuit.
+The main objective of this project is to help blind people to walk with ease and to be warned whenever their walking path is obstructed with other objects, people or other similar odds. As a warning signal, a buzzer is connected in the circuit, whose frequency of beep changes according to the distance of object. The closer the distance of obstruction, the more will be the buzzer beep frequency. We can say that the beep frequency is inversely proportional to the distance.
 
 #### 2. Description:
 
-The main principle of this circuit is to increment the values on seven segment displays by pressing the button. When button 1 is pressed value on the display is incremented by one value and when other button is pressed value on the display is decremented by one value. The value on the display can be incremented and decremented from 0-99 as it uses only 2 displays. If one wants to display 3 digits, three displays should be used .
+A smart stick concept is devised to provide a smart electronic aid for blind people . Blind and visually impaired find difficulties in detecting obstacles during walking in the street.The system is intended to provide artificial vision and object detection, real time assistance via  making use of Arduino NANO. 
 
 #### 3.Identifying features:
-There are many circuits available for 2 digit up/down counter but using a microcontroller reduces components and space on the board but simple programming is required.
-
+The main component used for this device is the ultrasonic sensor.  The ultrasonic sensor transmits a high frequency sound pulse and then calculates the time to receive the signal of the sound echo to reflect back. The sensor has 2 circles. One of them acts as the transmitter and transmits the ultrasonic waves. The other one acts as a receiver (mostly a small microphone) and receives the echoed sound signal. The sensor is calibrated according to the speed of the sound in air. With this calibrated input, the time difference between the transmission and reception of sound pulse is determined to calculate the distance of the object. This circuit is powered by a 9-volt battery through a switch.
 #### 4.Requirements:
 
-  1. ATmega8 Microcontroller
-  2. 2 X 7-Segment Displays (Common Anode)
-  3. 2 X 10KΩ Resistors
-  4. 2 X 330Ω Resistors
-  5. 2 X Push Buttons
+  1. Arduino	Nano	
+  2. Ultrasonic Sensor	HC-SR04	
+  3. Buzzer	5 Volt	
+  4. Switch	DPDT	
+  5. Battery	9Volt	
 
-##### i)High level requirements:
-|  ID   |                                              DESCRIPTION            |
-|-------|                                                      -------------  |
-| HR01  | It shall need Power supply as input                                 |
-| HR02  | It shall need efficiency code & circuit to increment the values     |
-| HR03  | It shall use 7 segment Display for displaying number of increments  |
-| HR04  | It shall count in both directions, increasing as well as decreasing |
 
-##### ii)Low level requirements:
-|  ID   |   DESCRIPTION                                              |                  STATUS                            |
-|-------| -------------                                              |                                            --------|
-| LR01  | Input voltage is given                                     | Displays a two digit number                        |
-| LR02  | Reading the output word from right to left                 | Output is a binary value.                           |      
-| LR03  | Outputs represent a binary number                          | Equalling the number of input pulses received.      |
+#### Circuit Explanation:
+1. Vcc pin of HC-SR04 is connected to 5 volt pin of Arduino
+2. Trigger pin of HC-SR04 is connected to D12 pin of Arduino
+3. Echo pin of HC-SR04 is connected to D11 pin of Arduino
+4. The ground of HC-SR04 is connected to the GND pin of Arduino.
+5. The positive terminal of the 9-volt battery is connected to the Vin pin of Arduino and the negative terminal is connected to the GND pin of Arduino.
+6. A buzzer is connected between the D9 pin of Arduino and the GND pin.
 
-#### 7. Block diagram:
-##### Circuit diagram:
-![WhatsApp Image 2022-02-25 at 11 30 17 PM](https://user-images.githubusercontent.com/98872154/155764656-1f4a7877-077d-4cfb-88cc-508fbcecabe6.jpeg)
+The main component used for this device is the Ultrasonic Sensor HC-SR04. The ultrasonic sensor transmits a high frequency sound pulse and then calculates the time to receive the signal of the sound echo to reflect back. HC-SR04 has a transmitter & receiver surface. One of them acts as the transmitter and transmits the ultrasonic waves. The other one acts as a receiver and receives the echoed sound signal. The sensor is calibrated according to the speed of the sound in air. The speed of sound is 341 meters per second in the air, and the distance between the sensor and object is equal to time multiplied by the speed of sound divided by two.
 
-#### 8. Sensors:
-##### Push Button: 
-A push-button is a simple switch mechanism to control some aspect of a machine or a process. Buttons are typically made out of hard material, usually plastic or metal.The surface is usually flat or shaped to accommodate the human finger or hand, so as to be easily depressed or pushed. Buttons are most often biased switches, although many un-biased buttons (due to their physical nature) still require a spring to return to their un-pushed state. 
+Distance = (Time * Speed Of Sound) ÷ 2
 
-#### 9. Actuators:
-##### Seven segment Display:
-Seven segment displays are the output display device that provide a way to display information in the form of image or text or decimal numbers which is an alternative to the more complex dot matrix displays. It is widely used in digital clocks, basic calculators, electronic meters, and other electronic devices that display numerical information. It consists of seven segments of light emitting diodes (LEDs) which is assembled like numerical 8.
-
-#### 10. Micro controller:
-The ATmega8 is a low-power CMOS 8-bit microcontroller based on the AVR RISC architecture. By executing powerful instructions in a single clock cycle, the ATmega8 achieves throughputs approaching 1 MIPS per MHz, allowing the system designer to optimize power consumption ver- sus processing speed.
-
-#### 10.Application:
-###### . Alarm Clock, Set AC Timer, Set time in camera to take the picture, flashing light indicator in automobiles, car parking  control etc.
-###### . Counting the time allotted for special process or event by the scheduler.
-###### . The UP/DOWN counter can be used as a self-reversing counter.
-###### . It is also used as clock divider circuit.
-###### . The parallel load feature can be used to preset the counter for some initial count.
-###### . Commons used in home appliances like washing machine, microwave own, Time schedule led indicator, key board controller etc.
-###### . They are also used in machine moving control.
-###### . Mostly used in digital clocks and multiplexing circuits.
-###### . They are used to generate saw-tooth waveform (Stair case voltage)
-###### . It is also used in digital to analog converters.
+#### Block diagram:
+![WhatsApp Image 2022-03-08 at 3 44 06 PM](https://user-images.githubusercontent.com/98872154/157216011-8396e3b1-dafb-4919-b22e-2de64e98cb1f.jpeg)
+#### Circuit diagram:
+![WhatsApp Image 2022-03-08 at 3 47 10 PM](https://user-images.githubusercontent.com/98872154/157216510-b980ca60-6de4-4dc0-ab41-cc1341592f94.jpeg)
+#### Application:
+1. It works as a navigation device for the blind people by alerting them about dangers
+2. The sytem is applied in automotive parking sensors and obstacles warning system. 
+3. It is applied during the measurement of object distance. 
+4. Robotics barriers. 
+5. Auto detection. 
+6. With little software and sensor up gradation, can extensible to any other application and specification. 
