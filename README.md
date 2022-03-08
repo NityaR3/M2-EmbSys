@@ -16,4 +16,4 @@
 11. Testplan and outputs
 12. Images
 13. Application
-
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/73b3e414ebdc4b01a7fa1d9e2fa8f916)](https://www.codacy.com/gh/NityaR3/M2-EmbSys/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=NityaR3/M2-EmbSys&amp;utm_campaign=Badge_Grade)
